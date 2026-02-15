@@ -9,7 +9,7 @@
           ? 'bg-gray-300'
           : 'hover:bg-gray-100 hover:text-gray-900'
       "
-      class="pl-2 py-2 rounded-sm transition-colors w-full text-left text-sm flex items-center gap-1.5"
+      class="pl-2 py-2 rounded-sm transition-colors w-full text-left text-sm flex items-center gap-1.5 hover:cursor-pointer"
       @click="setTab(tab.name)"
     >
       <i v-if="isActive(tab.name)" class="pi pi-angle-right" />
