@@ -14,5 +14,13 @@ p {
 }
 
 .section_header {
-  @apply text-2xl mb-4;
+  @apply text-3xl mb-10;
+}
+
+.tag_wrapper {
+  @apply flex flex-wrap gap-1.5 justify-center;
+}
+
+.tag {
+  @apply bg-stone-300 px-2 py-0.5 rounded-md text-xs;
 }

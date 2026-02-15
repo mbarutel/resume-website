@@ -3,12 +3,8 @@
     <h3 class="sidebar_header">Relevant Skills</h3>
     <div v-for="section in skills" :key="section.label">
       <h4 class="mb-2 mt-4 text-sm">{{ section.label }}</h4>
-      <div class="flex flex-wrap gap-1.5">
-        <span
-          v-for="item in section.items"
-          :key="item"
-          class="bg-stone-300 px-2 py-0.5 rounded-md text-xs"
-        >
+      <div class="tag_wrapper">
+        <span v-for="item in section.items" :key="item" class="tag">
           {{ item }}
         </span>
       </div>
