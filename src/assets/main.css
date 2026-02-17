@@ -10,17 +10,17 @@ p {
 }
 
 .sidebar_header {
-  @apply text-lg mb-4;
+  @apply text-lg mb-3;
 }
 
 .section_header {
-  @apply text-3xl mb-10;
+  @apply text-3xl mb-6;
 }
 
 .tag_wrapper {
-  @apply flex flex-wrap gap-1.5 justify-center;
+  @apply flex flex-wrap gap-1.5 justify-start;
 }
 
 .tag {
-  @apply bg-stone-300 px-2 py-0.5 rounded-md text-xs;
+  @apply px-4 bg-gray-100 py-0.5 text-xs border-l-2 border-b-2 border-t border-r hover:italic;
 }

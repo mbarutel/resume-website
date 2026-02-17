@@ -7,11 +7,11 @@
         :key="education.institution"
         class="grid grid-cols-2 gap-y-4 border-b pb-4"
       >
-        <div class="flex flex-col font-semibold">
-          <span>
+        <div class="flex flex-col">
+          <span class="font-semibold">
             {{ education.institution }}
           </span>
-          <span class="text-sm">
+          <span class="text-sm italic">
             {{ education.level }}
           </span>
         </div>

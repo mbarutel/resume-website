@@ -31,16 +31,22 @@
     </div>
     <div>
       <h3 class="sidebar_header">School Projects</h3>
-      <div v-for="project in schoolProjects" :key="project.title" class="">
-        <div class="text-sm font-semibold">
-          <a :href="project.link" target="_blank" rel="noopenner noreferrer">
-            <li class="pi pi-external-link text-xs" />
-          </a>
-          {{ project.title }}
+      <div class="border-l py-4">
+        <div
+          v-for="project in schoolProjects"
+          :key="project.title"
+          class="pl-6 relative"
+        >
+          <hr class="absolute left-0 top-2.5 w-4" />
+          <div class="text-sm font-semibold">
+            <a :href="project.link" target="_blank" rel="noopenner noreferrer">
+              {{ project.title }}
+            </a>
+          </div>
+          <p v-if="project.description != null" class="text-xs">
+            {{ project.description }}
+          </p>
         </div>
-        <p v-if="project.description != null" class="text-xs">
-          {{ project.description }}
-        </p>
       </div>
     </div>
   </div>
