@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="sidebar_header">Personal Details</h3>
+    <h3 class="sidebar_header">Contact Details</h3>
     <ul class="text-sm flex flex-col gap-1.5">
       <li>
         <i class="pi pi-mobile" />
@@ -15,7 +15,7 @@
         michelbarutel.work@hotmail.com
       </li>
     </ul>
-    <ul class="text-sm grid grid-cols-2 mt-4 place-items-center">
+    <ul class="text-sm grid grid-cols-2 mt-4 place-items-start">
       <li>
         <a
           href="https://www.linkedin.com/in/micheledubas/"

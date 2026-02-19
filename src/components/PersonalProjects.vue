@@ -21,7 +21,7 @@
             {{ project.title }}
           </h5>
           <hr class="my-1.5" />
-          <div class="tag_wrapper mt-2">
+          <div class="tag_wrapper justify-center mt-2">
             <span v-for="tag in project.tags" :key="tag" class="tag">
               {{ tag }}
             </span>
@@ -127,7 +127,7 @@ const freelanceProjects: Project[] = [
     image: "/ics-project.webp",
   },
   {
-    title: "A Studio Hair Studio",
+    title: "AStudio Hair Studio",
     link: "https://astudiolarnaca.com/",
     description: null,
     tags: ["Next.js", "React", "Typescript", "Contentful"],

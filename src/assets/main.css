@@ -18,7 +18,7 @@ p {
 }
 
 .tag_wrapper {
-  @apply flex flex-wrap gap-1.5 justify-start;
+  @apply flex flex-wrap gap-1.5;
 }
 
 .tag {

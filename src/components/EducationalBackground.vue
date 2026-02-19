@@ -8,7 +8,7 @@
         class="grid grid-cols-2 gap-y-4 border-b pb-4"
       >
         <div class="flex flex-col">
-          <span class="font-semibold">
+          <span class="font-semibold underline">
             {{ education.institution }}
           </span>
           <span class="text-sm italic">

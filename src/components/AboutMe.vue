@@ -17,10 +17,10 @@
     </p>
     <p>
       Outside of coding, I enjoy spending time with my family (especially our
-      dog), going on roadtrips, martial arts, and talking about coding projects.
-      I am super friendly and have been told by many of previous co-workers that
-      they have really enjoyed working with me due to my funny personality and
-      fun attitude.
+      dog), going on roadtrips, martial arts, and (of course) talking about
+      coding projects. I am super friendly and have been told by many of
+      previous co-workers that they have really enjoyed working with me due to
+      my funny personality and fun attitude.
     </p>
   </div>
   <div>
@@ -28,9 +28,9 @@
     <div
       v-for="interest in interests"
       :key="interest.name"
-      class="py-2 border-b text-sm"
+      class="py-2 mt-2 border-b text-sm"
     >
-      <h3 class="font-semibold">{{ interest.name }}</h3>
+      <h3 class="font-semibold underline">{{ interest.name }}</h3>
       <h6 class="italic mb-3 text-xs">
         Since {{ timeAgo(interest.startDate) }}
       </h6>

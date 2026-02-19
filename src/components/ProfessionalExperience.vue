@@ -5,29 +5,32 @@
       <div
         v-for="experience in experiences"
         :key="experience.company"
-        class="grid grid-cols-2 gap-y-4 border-b pb-4"
+        class="gap-y-4 border-b pb-4"
       >
-        <div class="flex flex-col font-semibold">
-          <span>
-            {{ experience.company }}
-          </span>
+        <div class="flex flex-col font-semibold text-lg underline">
+          <span> {{ experience.company }} </span>
         </div>
 
-        <div v-for="position in experience.positions" :key="position.title">
-          <span class="text-sm">
-            {{ position.title }}
-          </span>
+        <div
+          v-for="position in experience.positions"
+          :key="position.title"
+          class="py-2"
+        >
+          <div class="flex justify-between">
+            <div class="flex flex-col mb-3">
+              <span class="font-semibold text-sm">{{ position.title }} </span>
+              <small class="italic">
+                {{ position.location }}
+              </small>
+            </div>
+            <small>
+              {{ position.timeline }}
+            </small>
+          </div>
           <div
             class="flex flex-col text-sm font-light italic ml-auto text-right"
-          >
-            <span>
-              {{ position.timeline }}
-            </span>
-            <span>
-              {{ position.location }}
-            </span>
-          </div>
-          <ul class="col-span-2 text-sm">
+          ></div>
+          <ul class="col-span-2 text-xs">
             <li
               v-for="reponsibility in position.responsibilities"
               :key="reponsibility"
@@ -100,9 +103,9 @@ const experiences: Experience[] = [
         timeline: "January 2020 - June 2020",
         location: "Helsinki, Finland",
         responsibilities: [
-          "Fixing iPhones",
-          "Packing orders",
-          "Quality Control of order",
+          "Fixing iPhones such as battery replacements, screen replacements, and more.",
+          "Quality Control to ensure that iPhone are at an acceptable quality for purchase.",
+          "Packing product orders.",
         ],
       },
     ],
@@ -117,7 +120,7 @@ const experiences: Experience[] = [
         responsibilities: [
           "Ensuring that the store was in presentable state",
           "Helping customer with their shopping needs and operating the register",
-          "Replinishing stock and variety of diffenrent responsibilies in the shop",
+          "Replinishing stock and variety of different responsibilies in the shop",
         ],
       },
     ],
